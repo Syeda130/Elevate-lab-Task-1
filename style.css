@@ -1,0 +1,377 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-image: url('./images/hero.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: -15px;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.78); /* semi-transparent black overlay */
+    z-index: 1;
+}
+
+.navigation{
+    display: flex;
+     background-color: transparent;
+     position: relative;
+     z-index: 2;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+   flex-wrap: nowrap;
+}
+nav ul li a{
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: cursive;
+    text-decoration: none;
+}
+li{
+    margin-top: 15px;
+    margin-left: 6px;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 10px; 
+}
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.hero{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 15px;
+    flex-wrap: wrap;
+      position: relative;
+  z-index: 2;   
+}
+.taste{
+    font-family: cursive;
+              font-size: 34px;
+              font-style: oblique;
+              font-weight: bold;
+}
+.pizza{
+     color: yellow;
+              font-family: cursive;
+              font-size: 34px;
+              font-style: oblique;
+              font-weight: bold;
+}
+.pizzeria{
+         color: yellow;
+              font-family: cursive;
+              font-size: 34px;
+              font-style: oblique;
+              font-weight: bold;
+}
+.family
+{
+        color: white;
+              font-family: cursive;
+              font-size: 28px;
+              font-style: oblique;
+              font-weight: bold;
+}
+
+.secone{
+    z-index: 2;
+    color: white;
+    padding: 4px;
+     width: 36vw;
+}
+.sectwo{ 
+   width: 100%;
+  max-width: 500px;
+  text-align: center;
+  z-index:  2;
+}
+button{
+ background: linear-gradient(145deg,#e6c10e, #ffbc00);
+  border: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+/* container-two */
+.container-two{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   color: white;
+   gap: 30px;
+}
+.container-two p{
+    width: 40vw;
+}
+p{
+    font-style: normal;
+    font-family: math;
+    font-weight: bold;
+}
+.about-section{
+    color: white;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+.about-section h2 {
+  color: yellow;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+
+
+/* New Featured Section */
+.container-three {
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.feature-card {
+  background-color: #101010;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+}
+
+.feature-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.feature-card h2 {
+  color: yellow;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  font-family: math;
+  font-weight: normal;
+}
+
+/* Contact Section */
+.contact-section {
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: yellow;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-section button {
+  background: linear-gradient(145deg, #e6c10e, #ffbc00);
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .secone,
+  .sectwo,
+  .container-two p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .container-two {
+    flex-direction: column;
+  }
+  .sectwo img{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 918px) {
+    .sectwo img{
+      visibility: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+  nav ul li {
+    padding: 8px 9px;
+    font-size: 0.8rem;
+    margin-left: 6px;
+  }
+
+  button,
+  .contact-section button {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
+
+  .about-section h2,
+  .contact-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .feature-card h2 {
+    font-size: 1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 370px) {
+  nav ul li {
+    padding: 5px 6px;
+    font-size: 0.6rem;
+    margin-left: 5px;
+  }
+    button,
+  .contact-section button {
+    font-size: 0.5rem;
+    padding: 8px 10px;
+  }
+
+  .about-section h2,
+  .contact-section h2 {
+    font-size: 0.9rem;
+  }
+
+  .feature-card h2 {
+    font-size: 0.8rem;
+  }
+
+  .feature-card p {
+    font-size: 0.7rem;
+  }
+
+  .secone{
+        margin-top: -6px;
+  }
+  .sectwo{
+        margin-top: -35px;
+  }
+  .container h1{
+    font-size: 21px;
+  }
+  .container p{
+    font-size: 13px;
+  }
+    .container-two h1{
+    font-size: 21px;
+    margin-top: 7px;
+  }
+    .container-two h2{
+    font-size: 17px;
+  }
+  .container-two p{
+    font-size: 10px; 
+    padding: 3px;
+    text-align: center;
+    margin: 4px;
+  }
+  .about-section p{
+    font-size: 10px;
+  }
+}
